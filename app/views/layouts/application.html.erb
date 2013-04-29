@@ -8,16 +8,16 @@
 </head>
 <body>
 
-	<ul>
-		<li><%= link_to "Home", welcome_index_path %></li>
-		<li><%= link_to "About", welcome_about_path %></li>
-	</ul>
+  <ul>
+    <li><%= link_to "Home", welcome_index_path %></li>
+    <li><%= link_to "About", welcome_about_path %></li>
+  </ul>
 
   <h1>
     <%= yield :title %>
   </h1>
 
-	<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
