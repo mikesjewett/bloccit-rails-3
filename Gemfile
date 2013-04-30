@@ -11,6 +11,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'faker'
+
 gem 'jquery-rails'
 
 gem 'newrelic_rpm'
