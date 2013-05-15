@@ -13,5 +13,6 @@ end
 gem 'faker'
 gem 'jquery-rails'
 gem 'devise'
+gem 'cancan'
 
 gem 'newrelic_rpm'
