@@ -14,5 +14,6 @@ gem 'faker'
 gem 'jquery-rails'
 gem 'devise'
 gem 'cancan'
+gem 'redcarpet'
 
 gem 'newrelic_rpm'
