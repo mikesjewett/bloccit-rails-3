@@ -10,10 +10,15 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+# in order of install
 gem 'faker'
 gem 'jquery-rails'
 gem 'devise'
 gem 'cancan'
 gem 'redcarpet'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
+gem 'figaro'
 
 gem 'newrelic_rpm'
