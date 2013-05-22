@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: bloccit_development
+  database: bloccit-test-development
   pool: 5
   # username: bloccit
   # password:
@@ -41,7 +41,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: bloccit_test
+  database: bloccit-test-test
   pool: 5
   # username: bloccit
   # password:
@@ -49,7 +49,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: bloccit_production
+  database: bloccit-test-production
   pool: 5
   # username: bloccit
   # password:
