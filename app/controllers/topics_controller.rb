@@ -36,8 +36,21 @@ class TopicsController < ApplicationController
     if @topic.update_attributes(params[:topic])
       redirect_to @topic
     else
-      flash[:error] = "Error saving topic. Please try again"
+      flash[:error] = "Error saving topic. Please try again."
       render :edit
+    end
+  end
+
+  def destroy
+    @topic = Topic.find(params[:id])
+    name = @topic.name
+    authorize! :destroy, @topic, message: "You need to own the topic to delete it."
+    if @topic.delete
+      flash[:notice] = "\"#{name}\" was deleted successfully."
+      redirect_to topics_path
+    else
+      flash[:error] = "Was unable to delete topic. Please try again."
+      render :show
     end
   end
 end
