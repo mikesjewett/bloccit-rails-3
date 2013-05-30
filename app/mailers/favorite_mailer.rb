@@ -1,5 +1,5 @@
 class FavoriteMailer < ActionMailer::Base
-  default from: "support@bloc.io"
+  default from: "mike@bloc.io"
 
   def new_comment(user, post, comment)
     @user = user
