@@ -22,5 +22,11 @@ module ApplicationHelper
       options = options.merge :renderer => BootstrapLinkRenderer
     end
     super *[collection_or_options, options].compact
-  end  
+  end
+
+  def comment_url_helper(comment)
+    post = comment.post
+    topic = post.topic
+    [topic, post, comment]
+  end
 end
