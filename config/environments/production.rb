@@ -65,6 +65,6 @@ Bloccit::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  # http://bloccit.herokuapp.com
-  config.action_mailer.default_url_options = { :host => 'bloccit.herokuapp.com' }  
+  # http://bloccit-test.herokuapp.com
+  config.action_mailer.default_url_options = { :host => 'bloccit-test.herokuapp.com' }  
 end
