@@ -5,7 +5,6 @@ class Topics::PostsController < ApplicationController
     @post = Post.find(params[:id])
     @comments = @post.comments
     @comment = Comment.new
-    @vote = current_user.voted(@post)
   end
 
   def new
@@ -51,8 +50,6 @@ class Topics::PostsController < ApplicationController
   def destroy
     @topic = Topic.find(params[:topic_id])
     @post = Post.find(params[:id])
-    # @comments = @post.comments
-    # @comment = Comment.new
 
     title = @post.title
     authorize! :destroy, @post, message: "You need to own the post to delete it."
