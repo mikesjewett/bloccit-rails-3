@@ -5,11 +5,10 @@
         <i class="icon-star-empty"> </i>&nbsp; Unfavorite
       <% end %>
     <% else %>
-      <%= form_for [topic, post, Favorite.new] do |f| %>
-        <%= button_tag type: 'submit', class: 'btn btn-small' do %>
-          <i class="icon-star"> </i>&nbsp; Favorite
-        <% end %>
+      <%= link_to [topic, post, Favorite.new], class: 'btn btn-small', method: :post do %>
+        <i class="icon-star"> </i>&nbsp; Favorite
       <% end %>
     <% end %>
   </div>
 <% end %>
+
